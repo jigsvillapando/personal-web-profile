@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jigs Villapando - Personal Web Profile</title>
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700|Jost:300,400,500,600,700|Poppins:300,400,500,600,700" rel="stylesheet">
+  <!-- Bootstrap CSS (optional, for grid and responsive utilities) -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <!-- Font Awesome (for icons) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="styles.css">
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top">
+    <div class="container d-flex align-items-center justify-content-between">
+      <div class="logo">
+        <a href="#top"><img src="logo.png" alt="Logo" class="img-fluid" style="height:60px;"></a>
+      </div>
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a class="nav-link scrollto active" href="#hero">HOME</a></li>
+          <li><a class="nav-link scrollto" href="#about">ABOUT ME</a></li>
+          <li><a class="nav-link scrollto" href="#hobbies">HOBBIES & INTERESTS</a></li>
+          <li><a class="nav-link scrollto" href="#contact">CONTACT INFO</a></li>
+        </ul>
+        <i class="fas fa-bars mobile-nav-toggle"></i>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ======= Hero Section ======= -->
+  <section id="hero" class="d-flex align-items-center">
+    <div class="container text-center">
+      <h1>Jigs Villapando</h1>
+      <h2>Network Engineer | Web Enthusiast</h2>
+      <a href="#about" class="btn-get-started scrollto">Learn More</a>
+    </div>
+  </section>
+
+  <main id="main">
+    <!-- ======= About Me Section ======= -->
+    <section id="about" class="about">
+      <div class="container">
+        <div class="section-title text-center">
+          <h2>About Me</h2>
+        </div>
+        <div class="row align-items-center">
+          <div class="col-lg-4 text-center">
+            <img src="profile.jpg" alt="Jigs Villapando" class="img-fluid rounded-circle profile-img">
+          </div>
+          <div class="col-lg-8">
+            <p>Hello! I'm Jigs, a network engineer and web development enthusiast learning HTML, CSS, and JavaScript. I enjoy building creative projects and continuously improving my skills.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======= Hobbies & Interests Section ======= -->
+    <section id="hobbies" class="hobbies">
+      <div class="container">
+        <div class="section-title text-center">
+          <h2>Hobbies & Interests</h2>
+        </div>
+        <div class="row">
+          <div class="col-md-4">
+            <div class="hobby-box">
+              <i class="fas fa-basketball-ball fa-3x"></i>
+              <h4>Basketball</h4>
+              <p>I enjoy playing and watching basketball, appreciating teamwork and strategy on the court.</p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="hobby-box">
+              <i class="fas fa-code fa-3x"></i>
+              <h4>Coding</h4>
+              <p>I am passionate about coding, continuously learning new technologies and building projects.</p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="hobby-box">
+              <i class="fas fa-gamepad fa-3x"></i>
+              <h4>Gaming</h4>
+              <p>Playing games like Valorant helps me unwind and challenges my strategic thinking.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======= Contact Info Section ======= -->
+    <section id="contact" class="contact">
+      <div class="container">
+        <div class="section-title text-center">
+          <h2>Contact Info</h2>
+        </div>
+        <div class="row justify-content-center">
+          <div class="col-lg-8">
+            <p class="text-center">Email: <a href="mailto:jigsvillapando@outlook.com">jigsvillapando@outlook.com</a></p>
+            <p class="text-center">Social Media: <a href="https://www.facebook.com/jigsvillapando/" target="_blank">Facebook</a></p>
+            <div class="text-center mt-3">
+              <button id="funFactBtn" class="btn btn-warning">Click for a Fun Fact</button>
+            </div>
+            <p id="funFact" class="text-center fun-fact mt-2"></p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+    <div class="container text-center">
+      <p>© 2025 Jigs Villapando. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Optional: Bootstrap JS and dependencies -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <!-- Optional: Custom JS for mobile nav toggle -->
+  <script>
+    document.querySelector('.mobile-nav-toggle').addEventListener('click', function () {
+      document.getElementById('navbar').classList.toggle('navbar-mobile');
+      this.classList.toggle('fa-times');
+    });
+  </script>
+</body>
+</html>
